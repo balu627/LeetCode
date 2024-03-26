@@ -1,27 +1,18 @@
 class Solution {
 public:
     bool isPalindrome(int x) {
-        if(x < 0)
-            {
-                return false;
-            }
-        int n = x;
-        long int s=0;
-        while(n!=0)
+        int t = x;
+        long long sum =0;
+        while(t>0)
         {
-            int r = n%10;
-            n = n/10;
-            s = s*10+r;
+            int r = t%10;
+            sum = sum*10 + r;
+            t = t/10;
         }
-        if(x == s)
+        if((int)sum == x)
         {
-            cout<<s<<endl;
             return true;
         }
-        else{
-            return false;
-        }
-       
+        return false;
     }
-    
 };
