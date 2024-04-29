@@ -43,41 +43,39 @@ public:
             merge(arr,low,mid,high);
         }
     }
-    // int quick(vector<int>&nums,int low,int high)
-    // {
-    //     int i = low;
-    //     int j = high;
-    //     int p = nums[low];
-    //     while(i<j)
-    //     {
-    //         while(i <= high && nums[i]<=p  )
-    //         {
-    //             i++;
-    //         }
-    //         while(j>= low && nums[j]>p )
-    //         {
-    //             j--;
-    //         }
-    //         if(i<j)
-    //         {
-    //             swap(nums[i],nums[j]);
-    //         }
-    //     }
-    //     if(i>j)
-    //     {
-    //         swap(nums[low],nums[j]);
-    //     }
-    //     return j;
-    // }
-    // void quicksort(vector<int>&nums,int low,int high)
-    // {
-    //     if(low<high)
-    //     {
-    //         int p = quick(nums,low,high);
-    //         quicksort(nums,low,p-1);
-    //         quicksort(nums,p+1,high);
-    //     }
-    // }
+//     int quick(vector<int>&nums,int low,int high)
+//     {
+//         int i = low;
+//         int j = high;
+//         int p = nums[low];
+//         while(i<j)
+//         {
+//             while(i <= high && nums[i]<=p  )
+//             {
+//                 i++;
+//             }
+//             while(j>= low && nums[j]>p )
+//             {
+//                 j--;
+//             }
+//             if(i<j)
+//             {
+//                 swap(nums[i],nums[j]);
+//             }
+//         }
+//             swap(nums[low],nums[j]);
+        
+//         return j;
+//     }
+//     void quicksort(vector<int>&nums,int low,int high)
+//     {
+//         if(low<high)
+//         {
+//             int p = quick(nums,low,high);
+//             quicksort(nums,low,p-1);
+//             quicksort(nums,p+1,high);
+//         }
+//     }
     vector<int> sortArray(vector<int>& nums) {
         int n = nums.size();
         mergesort(nums,0,n-1);
